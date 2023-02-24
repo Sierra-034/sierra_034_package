@@ -1,7 +1,10 @@
+import logging
 from sierra_034_package import unreleased
 
+logging.basicConfig(level=logging.DEBUG)
+
 if __name__ == '__main__':
-    print('>> Comienza ejecución de paquete')
+    logging.debug('>> Comienza ejecución de paquete')
     workshops = unreleased()
-    print(workshops)
-    print('>> Termina ejecución de paquete')
+    logging.debug(workshops)
+    logging.debug('>> Termina ejecución de paquete')
